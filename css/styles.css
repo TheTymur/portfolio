@@ -4,13 +4,14 @@ body{
 }
 
 nav{
-    margin-top: 10px;
+    background-color: inherit;
     position: sticky;
+    z-index: 1000;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: #8AA1B1;
 }
 
@@ -22,13 +23,15 @@ nav{
 
 nav a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: inherit;
+    transition: 1s;
 }
 
 nav a:hover{
-    color: #374A58;
+    color: #B5FFE9;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .languages {
