@@ -1,0 +1,32 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 10%;
+    color: #8AA1B1;
+    background-color: #050423;
+}
+
+.hero_content {
+    max-width: 50%;
+}
+
+.hero_content h1 {
+    font-size: 3rem;
+    color: #B5FFE9; 
+    margin-bottom: 10px;
+}
+
+.hero_content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero_content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
