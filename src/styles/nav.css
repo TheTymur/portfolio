@@ -1,0 +1,36 @@
+nav{
+    background-color: inherit;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #8AA1B1;
+}
+
+.nav_links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: inherit;
+    transition: 1s;
+}
+
+nav a:hover{
+    color: #B5FFE9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.languages {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
