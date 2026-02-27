@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,19 @@
     <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="src/styles/nav.css">
     <link rel="stylesheet" href="src/styles/hero.css">
+    <link rel="stylesheet" href="src/styles/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <ul class="nav_links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#about_me">About me</a></li>            
+            <li><a href="#about_me">About me</a></li>
             <li><a href="#contact_me">Contact me</a></li>
         </ul>
         <ul class="languages">
@@ -33,7 +37,48 @@
                 <p>Creating fast, creative and reliable software</p>
             </div>
         </section>
-        
+
+        <section id="Projects" class="projects-section">
+            <h1 class="projects_title">Projects</h1>
+            <div class="projects_grid">
+                <div class="project_card">
+                    <a href="https://github.com/TheTymur/Wizards-Wars">
+                        <div class="project_content">
+                            <h3>Wizards Wars</h3>
+                            <p>A turn-based magical duel game where players cast powerful spells, manage resources, and
+                                outwit their opponent to claim victory!</p>
+                        </div>
+                        <div class="project_tech">
+                            <span>Pygame library</span>
+                            <span>Threading</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project_card">
+                    <a href="https://github.com/TheTymur/GeoTrackerAndNotify">
+                        <div class="project_content">
+                            <h3>GeoTracker&Notify</h3>
+                            <p>GeoTracker&Notify is a desktop application that goes beyond standard to-do lists by
+                                triggering reminders based on your real-time geographic location. It combines a robust
+                                PyQt5
+                                interface with a background Flask server to handle geolocation data, ensuring you never
+                                forget a task when you arrive at a specific destination.</p>
+                        </div>
+                        <div class="project_tech">
+                            <span>Backend Logic: Python 3.x, Flask (Local Server)</span>
+                            <span>Frontend: PyQt5 (Desktop GUI)</span>
+                            <span>Data: SQLite, SQLAlchemy (ORM)</span>
+                            <span>API: OpenCage Data (Geocoding)</span>
+                            <span>DataBase migration tool: Alembic</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 </body>
+
 </html>
