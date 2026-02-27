@@ -1,0 +1,43 @@
+.about_me_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.about_me_title{
+    font-size: 2rem;
+    color: #B5FFE9;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text-content{
+    padding: 0 10%;
+}
+.about_me_content h2{
+    color: #8AA1B1;
+    font-size: 2rem;
+}
+
+.about_me_content h3{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.about_me_content p{
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+.profile_image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 200px;
+}
