@@ -2,3 +2,8 @@ body{
     background-color: #030216;
     font-family: 'Montserrat', sans-serif;
 }
+
+html{
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
