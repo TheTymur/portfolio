@@ -1,0 +1,22 @@
+.site-footer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.303);
+    padding: 10px;
+    font-size: 0.9rem;
+
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-left{
+    margin-left: 25px;
+}
+
+.footer-right{
+    margin-right: 25px;
+}
+
