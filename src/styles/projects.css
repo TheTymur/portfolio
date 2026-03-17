@@ -18,9 +18,12 @@
 }
 
 .projects_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
     gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .project_card {
@@ -30,9 +33,13 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease, border-color 0.3s ease;
     padding: 10px;
+    max-width: 500px;
+    cursor: pointer;
+    min-width: 320px;
+    flex: 0 1 calc(50% - 15px);
 }
 
-.project_card:hover {
+.project_card:hover {   
     transform: translateY(-10px);
     border-color: #B5FFE9;
 }
@@ -69,5 +76,26 @@
     border: 1px solid rgba(181, 255, 233, 0.3);
 }
 
+.viev-more_btn{
+    font-size: 1.5rem;
+    display: flex;
+    color: #B5FFE9;
+    cursor: pointer;
+    justify-content: center;
+    width: fit-content;
+    margin: 25px auto 0;
+    border: 2px solid rgba(181, 255, 233, 0.3);
+    border-radius: 7px;
+    transition: 1s;
+}
 
+.viev-more_btn a{
+    padding: 5px;
+}
 
+.viev-more_btn:hover{   
+    
+    border-color: #8AA1B1;
+    color:bisque;
+
+}
