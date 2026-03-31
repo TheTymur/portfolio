@@ -24,6 +24,8 @@
     gap: 30px;
     margin: 0 auto;
     justify-content: center;
+    border: 1px  rgba(255, 255, 255, 0.05);
+
 }
 
 .project_card {
@@ -86,7 +88,7 @@
     margin: 25px auto 0;
     border: 2px solid rgba(181, 255, 233, 0.3);
     border-radius: 7px;
-    transition: 1s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .viev-more_btn a{
@@ -94,8 +96,7 @@
 }
 
 .viev-more_btn:hover{   
-    
-    border-color: #8AA1B1;
-    color:bisque;
+    transform: scale(1.1);
+    color: #8AA1B1;
 
 }

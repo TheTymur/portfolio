@@ -70,9 +70,3 @@
     border: 1px solid rgba(181, 255, 233, 0.3);
     transition: 0.5s;
 }
-
-.contact_links span:hover{
-    border-color: white;
-    font-size: 1rem;
-    transition: 1s;
-}
