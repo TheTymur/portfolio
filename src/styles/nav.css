@@ -34,3 +34,11 @@ nav a:hover{
     gap: 10px;
     list-style: none;
 }
+
+
+.languages .lang-btn.active {
+    color: #B5FFE9;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}

@@ -1,4 +1,4 @@
-// src/main.ts
+import { initLangBtn } from "./langs";
 
 interface Point3D {
   x: number;
@@ -7,6 +7,9 @@ interface Point3D {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  initLangBtn();
+
   const canvas = document.getElementById("hero-canvas") as HTMLCanvasElement;
   if (!canvas) return;
 
@@ -114,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const angleYVal = time * 0.0006;
     const angleXVal = Math.sin(time * 0.0003) * 0.3;
-    
+
     const stretch = 1 + 0.3  * Math.sin(time * 0.0001);
 
     const projected = vertices.map((v) => {
