@@ -42,3 +42,9 @@ nav a:hover{
     text-decoration: underline;
     text-underline-offset: 4px;
 }
+
+.nav_links a.active{
+    color: #84d3bc;
+    text-decoration: underline;
+    text-underline-offset: 4px;   
+}

@@ -13,6 +13,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("hero-canvas") as HTMLCanvasElement;
   if (!canvas) return;
 
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav_links a');
+
+  const observerCallback = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        const currentSectionId = entry.target.getAttribute('id');
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+
+          if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  };
+
+  const observerOptions = {
+    threshold: 0.9
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
 
