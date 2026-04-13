@@ -80,6 +80,7 @@
 
 .viev-more_btn{
     font-size: 1.5rem;
+    padding: 5px;
     display: flex;
     color: #B5FFE9;
     cursor: pointer;
