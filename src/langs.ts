@@ -28,6 +28,7 @@ const translations: Record<string, Record<string, string>> = {
         proj2_migrationTool: "DataBase migration tool: Alembic",
         viewMore_btn: "View More",
         aboutMe_title: "About me",
+        aboutMe_name: "Tymur Arseniuk",
         aboutMe_subtitle: "Material Informatics student",
         aboutMe_paragraph: "I am a software developer and student at Cracow University of Technology dedicated to bridging\
                         the\
@@ -65,6 +66,7 @@ const translations: Record<string, Record<string, string>> = {
         proj2_migrationTool: "Narzędzie do migracji bazy danych: Alembic",
         viewMore_btn: "Zobacz więcej",
         aboutMe_title: "O mnie",
+        aboutMe_name: "Tymur Arseniuk",
         aboutMe_subtitle: "Student Informatyki materiałowej",
         aboutMe_paragraph: "Jestem programistą i studentem Politechniki Krakowskiej, zaangażowanym w budowanie pomostu między złożonymi danymi a angażującymi doświadczeniami użytkownika. Moja praca napędzana jest fascynacją logiką, która stoi zarówno za nowoczesnymi systemami, jak i skomplikowanymi grami, co skłoniło mnie do specjalizacji w sztucznej inteligencji, uczeniu maszynowym oraz analizie danych",
         contactMe_title: "Kontakt ze mną",
