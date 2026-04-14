@@ -1,3 +1,12 @@
+import './reset.css';
+import './styles.css';
+import './styles/nav.css';
+import './styles/hero.css';
+import './styles/projects.css';
+import './styles/about_me.css';
+import './styles/contact_me.css';
+import './styles/footer.css';
+
 import { initLangBtn } from "./langs";
 
 interface Point3D {
