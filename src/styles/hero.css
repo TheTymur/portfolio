@@ -31,7 +31,10 @@
 }
 
 #hero-canvas{
-    width: 500px;
     height: 500px;
+    width: 40%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    border: solid red 2px;
 }
 
