@@ -6,7 +6,7 @@ const translations: Record<string, Record<string, string>> = {
         nav_contactMe: "Contact me",
         hero_title: "Hello there, I'm Tymur",
         hero_subtitle: "A software engineer",
-        hero_paragraph:"Creating fast and reliable software",
+        hero_paragraph:"Student at Cracow University of Technology fascinated by the world of AI. I am actively learning how to build applications from the ground up and am eager to figure out how to program intelligent agents",
         project_title: "Featured Projects",
         proj1_paragraph: "Wizards War is a 2D turn-based battle game developed using Python and Pygame. \
                         The game pits two players against each other in an epic magical showdown. \
@@ -30,13 +30,7 @@ const translations: Record<string, Record<string, string>> = {
         aboutMe_title: "About me",
         aboutMe_name: "Tymur Arseniuk",
         aboutMe_subtitle: "Material Informatics student",
-        aboutMe_paragraph: "I am a software developer and student at Cracow University of Technology dedicated to bridging\
-                        the\
-                        gap between complex data and engaging user experiences. My work is driven by a fascination with\
-                        the\
-                        logic that powers both modern systems and intricate games, leading me to specialize in AI,\
-                        Machine\
-                        Learning, and Data Science.",
+        aboutMe_paragraph: "I am a student at the Cracow University of Technology driven by a deep fascination with complex logic and interactive systems. While pursuing my studies, I am channeling my energy into expanding my skills in software engineering and artificial intelligence. Currently, I am focused on building my own applications from scratch, learning how to integrate intelligent agents and data-driven mechanics to create smarter, more engaging user experiences.",
         contactMe_title: "Contact me",
         Email: "Email me Directly",
         contactMe_paragraph1: "I'm open to discussing new oportunities, collaborations or simply connecting. Drop me a line anytime.",
@@ -53,7 +47,7 @@ const translations: Record<string, Record<string, string>> = {
         hero_title: "Cześć, jestem Tymur",
         hero_subtitle: "Inżynier oprogramowania",
         project_title: "Wyróżnione projekty",
-        hero_paragraph:"Tworzę szybkie i niezawodne oprogramowanie",
+        hero_paragraph:"Student Politechniki Krakowskiej, zafascynowany światem sztucznej inteligencji. Aktywnie uczę się budować aplikacje od podstaw i z zapałem odkrywam, jak programować inteligentnych agentów",
         proj1_paragraph: "WizardsWar to dwuwymiarowa, turowa gra bitewna stworzona przy użyciu języka Python i biblioteki Pygame. Gra stawia naprzeciwko siebie dwóch graczy w epickim, magicznym starciu. Gracze wcielają się w role czarodziejów, z których każdy dysponuje punktami zdrowia, maną oraz zestawem potężnych zaklęć. Celem jest przechytrzenie i przetrwanie przeciwnika poprzez strategiczne zarządzanie zasobami, rzucanie zaklęć i wykorzystywanie nadarzających się okazji, aby odnieść zwycięstwo.",
         proj1_lang: "Język programowania: Python",
         proj1_library: "Biblioteka: Pygame",
@@ -84,7 +78,7 @@ const translations: Record<string, Record<string, string>> = {
         hero_title: "Привіт, я Тимур",
         hero_subtitle: "Інженер ПЗ",
         project_title: "Вибрані проєкти",
-        hero_paragraph:"Створюю швидке та надійне програмне забезпечення",
+        hero_paragraph:"Студент Краківської політехніки, захоплений світом штучного інтелекту. Я активно вчуся створювати додатки з нуля і з великим ентузіазмом досліджую, як програмувати ШІ агентів",
         proj1_paragraph: "WizardsWar — це двовимірна покрокова бойова гра, створена на Python з використанням бібліотеки Pygame. Гра зіштовхує двох гравців у епічному магічному протистоянні. Гравці виступають у ролі чарівників, кожен з яких має певну кількість очок здоров’я, мани та набір потужних заклинань. Мета — перехитрити та перемогти суперника завдяки стратегічному управлінню ресурсами, вчасному чаклунству та використанню кожної можливості для здобуття перемоги.",
         proj1_lang: "Мови програмування: Python",
         proj1_library: "Бібліотеки: Pygame",
