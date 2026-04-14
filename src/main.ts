@@ -55,14 +55,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
 
+  let scale = 168;
+
   const resize = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-  };
-  resize();
-  window.addEventListener("resize", resize);
 
-  const scale = 168;
+    scale = Math.min(canvas.width, canvas.height) * 0.15;
+  
+  };
+
+  resize()
+
+  window.addEventListener("resize",resize)
 
   const hexRadius = 2;
   const height = 0.7;
