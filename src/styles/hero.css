@@ -13,19 +13,19 @@
 }
 
 .hero_content h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 3.5vw, 4rem);
     color: #B5FFE9; 
     margin-bottom: 10px;
 }
 
 .hero_content h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-bottom: 20px;
     color: white;
 }
 
 .hero_content p {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     line-height: 1.5;
     margin-bottom: 30px;
 }
