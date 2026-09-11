@@ -4,19 +4,26 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.303);
-    padding: 10px;
+    padding: 20px 5%;
     font-size: 0.9rem;
-
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer-left{
-    margin-left: 25px;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
 }
 
 .footer-right{
-    margin-right: 25px;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
 }
 

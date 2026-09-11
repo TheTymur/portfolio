@@ -2,14 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    padding: 0 10%;
+    min-height: calc(100vh - 70px);
+    padding: 40px 10%;
     color: #8AA1B1;
     background-color: #050423;
+    width: 100%;
+    gap: 30px;
 }
 
 .hero_content {
-    max-width: 50%;
+    flex: 1;
+    max-width: 55%;
 }
 
 .hero_content h1 {
@@ -31,9 +34,28 @@
 }
 
 #hero-canvas{
-    height: 500px;
-    width: 40%;
-    max-width: 500px;
-    aspect-ratio: 1/1;
+    width: 45%;
+    min-width: 320px;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+@media (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .hero_content {
+        max-width: 100%;
+    }
+
+    #hero-canvas {
+        display: none;
+    }
 }
 

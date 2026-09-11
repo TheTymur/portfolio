@@ -55,19 +55,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const ctx = canvas.getContext("2d");
   if (!ctx) return;
 
-  let scale = 168;
+  let scale = 162; // 1080 * 0.15
 
-  const resize = () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    scale = Math.min(canvas.width, canvas.height) * 0.15;
-  
+  const initializeCanvas = () => {
+    canvas.width = 1920;
+    canvas.height = 1080;
   };
 
-  resize()
-
-  window.addEventListener("resize",resize)
+  initializeCanvas();
 
   const hexRadius = 2;
   const height = 0.7;
@@ -162,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const angleYVal = time * 0.0006;
     const angleXVal = Math.sin(time * 0.0003) * 0.3;
 
-    const stretch = 1 + 0.3  * Math.sin(time * 0.0001);
+    const stretch = 1 + 0.3 * Math.sin(time * 0.0001);
 
     const projected = vertices.map((v) => {
       const stretched = { x: v.x * stretch, y: v.y * stretch, z: v.z * stretch };

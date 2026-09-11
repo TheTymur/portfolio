@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 60px 10%;
+    width: 100%;
 }
 
 .contact_grid{
@@ -11,6 +13,7 @@
     width: 100%;
     margin-bottom: 4rem;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .contact_me_title{
@@ -26,9 +29,10 @@
     border-radius: 10px;
     overflow: hidden;
     flex: 1;
+    min-width: 280px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease, border-color 0.3s ease;
-    padding: 10px;    
+    padding: 20px;
 }
 
 .contact_content{

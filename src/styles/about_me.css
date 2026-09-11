@@ -1,21 +1,30 @@
+.about_me-section {
+    padding: 60px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .about_me_content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    gap: 40px;
     align-items: center;
 }
 
 .about_me_title{
     font-size: 2rem;
     color: #B5FFE9;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
+
 .text-content{
-    padding: 0 10%;
+    flex: 1;
+    min-width: 280px;
 }
+
 .about_me_content h2{
     color: #8AA1B1;
     font-size: 2rem;
@@ -24,20 +33,38 @@
 .about_me_content h3{
     color: white;
     font-size: 1.5rem;
+    margin-top: 5px;
 }
 
 .about_me_content p{
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     font-size: 1rem;
-    max-width: 500px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.profile_image{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile_image img{
-    width: 400px;
-    height: 400px;
+    width: clamp(220px, 25vw, 360px);
+    height: clamp(220px, 25vw, 360px);
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid white;
-    margin-right: 200px;
+}
+
+@media (max-width: 850px) {
+    .about_me_content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about_me_content p {
+        margin: 15px auto 0;
+    }
 }
