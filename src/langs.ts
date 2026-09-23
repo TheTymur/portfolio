@@ -5,8 +5,8 @@ const translations: Record<string, Record<string, string>> = {
         nav_aboutMe: "About me",
         nav_contactMe: "Contact me",
         hero_title: "Hello there, I'm Tymur",
-        hero_subtitle: "A software engineer",
-        hero_paragraph:"Student at Cracow University of Technology fascinated by the world of AI. I am actively learning how to build applications from the ground up and am eager to figure out how to program intelligent agents",
+        hero_subtitle: "Material Informatics student",
+        hero_paragraph: "Student at Cracow University of Technology fascinated by the world of AI. I am actively learning how to build applications from the ground up and am eager to figure out how to program intelligent agents",
         project_title: "Featured Projects",
         proj1_paragraph: "A fully functional SCARA robotic arm prototype built for the Cracow University of Technology science club. Features comprehensive manual and automatic control through a custom desktop application, including real-time dynamics control, trajectory programming, and a gripper module.",
         proj1_lang: "Language: Java (Processing), C++ (Arduino)",
@@ -46,9 +46,9 @@ const translations: Record<string, Record<string, string>> = {
         nav_aboutMe: "O mnie",
         nav_contactMe: "Kontakt",
         hero_title: "Cześć, jestem Tymur",
-        hero_subtitle: "Inżynier oprogramowania",
+        hero_subtitle: "Student Informatyki materiałowej",
         project_title: "Wyróżnione projekty",
-        hero_paragraph:"Student Politechniki Krakowskiej, zafascynowany światem sztucznej inteligencji. Aktywnie uczę się budować aplikacje od podstaw i z zapałem odkrywam, jak programować inteligentnych agentów",
+        hero_paragraph: "Student Politechniki Krakowskiej, zafascynowany światem sztucznej inteligencji. Aktywnie uczę się budować aplikacje od podstaw i z zapałem odkrywam, jak programować inteligentnych agentów",
         proj1_paragraph: "W pełni funkcjonalny prototyp zrobotyzowanego ramienia SCARA zbudowany dla koła naukowego Politechniki Krakowskiej. Oferuje kompleksowe sterowanie ręczne i automatyczne za pośrednictwem dedykowanej aplikacji komputerowej, w tym kontrolę dynamiki w czasie rzeczywistym, programowanie trajektorii oraz obsługę chwytaka.",
         proj1_lang: "Język programowania: Java (Processing), C++ (Arduino)",
         proj1_library: "Sprzęt: Silniki krokowe, Chwytak",
@@ -76,15 +76,15 @@ const translations: Record<string, Record<string, string>> = {
         contactMe_paragraph2: "Można mnie również znaleźć na tych platformach:"
     },
 
-    ua:{
+    ua: {
         nav_home: "Головна сторінка",
         nav_projects: "Проєкти",
         nav_aboutMe: "Про мене",
         nav_contactMe: "Контакт",
         hero_title: "Привіт, я Тимур",
-        hero_subtitle: "Інженер ПЗ",
+        hero_subtitle: "Студент інженерії матеріалів",
         project_title: "Вибрані проєкти",
-        hero_paragraph:"Студент Краківської політехніки, захоплений світом штучного інтелекту. Я активно вчуся створювати додатки з нуля і з великим ентузіазмом досліджую, як програмувати ШІ агентів",
+        hero_paragraph: "Студент Краківської політехніки, захоплений світом штучного інтелекту. Я активно вчуся створювати додатки з нуля і з великим ентузіазмом досліджую, як програмувати ШІ агентів",
         proj1_paragraph: "Повністю функціональний прототип роботизованої руки SCARA, створений для наукового гуртка Краківської політехніки. Забезпечує комплексне ручне та автоматичне керування через спеціальний настільний додаток, включаючи контроль динаміки в реальному часі, програмування траєкторій та керування модулем захвату.",
         proj1_lang: "Мови програмування: Java (Processing), C++ (Arduino)",
         proj1_library: "Апаратне забезпечення: Крокові двигуни, Захват",
@@ -113,14 +113,14 @@ const translations: Record<string, Record<string, string>> = {
     }
 };
 
-export function UpdateLanguage(lang: string){
-    if(!translations[lang]) lang = "en";
+export function UpdateLanguage(lang: string) {
+    if (!translations[lang]) lang = "en";
 
     const elements = document.querySelectorAll("[lang-opt]");
 
     elements.forEach(el => {
         const key = el.getAttribute("lang-opt");
-        if(key && translations[lang][key]) {
+        if (key && translations[lang][key]) {
             el.textContent = translations[lang][key];
         }
     });
@@ -128,14 +128,14 @@ export function UpdateLanguage(lang: string){
     localStorage.setItem("portfolio_lang", lang);
 }
 
-export function initLangBtn(){
+export function initLangBtn() {
     const langbtn = document.querySelectorAll(".lang-btn");
     const savedLang = localStorage.getItem('portfolio_lang') || 'en';
 
     UpdateLanguage(savedLang);
 
     langbtn.forEach(btn => {
-        if(btn.getAttribute("data-lang") === savedLang){
+        if (btn.getAttribute("data-lang") === savedLang) {
             btn.classList.add("active");
         }
 
@@ -144,7 +144,7 @@ export function initLangBtn(){
             const target = e.target as HTMLElement;
             const selectedLang = target.getAttribute("data-lang");
 
-            if(!selectedLang) return;
+            if (!selectedLang) return;
 
             langbtn.forEach(b => b.classList.remove("active"));
             target.classList.add("active");
